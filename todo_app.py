@@ -12,3 +12,7 @@ def index():
 @app.route('/')
 def home():
 	return render_template("task_list.html")
+
+@app.route('/task')
+def task():
+	return render_template("task_list2.html")
